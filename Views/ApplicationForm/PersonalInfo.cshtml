@@ -1,0 +1,432 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Application Form</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+          integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+          crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="site.css" />
+</head>
+<body>
+
+  <div class="container py-5">
+        <form method="post">
+            <h1 class="text-center mb-4">Application Form</h1>
+
+            <!-- Personal Details -->
+            <fieldset class="border p-4 mb-4">
+                <legend class="w-auto px-2">Personal Details <i class="fa-solid fa-user"></i></legend>
+               <div class="row g-3">
+                <div class="row g-3">
+                    <div class="col-md-4">
+                        <label for="firstName" class="form-label">First Name</label>
+                        <input type="text" class="form-control" id="firstName" name="firstName" placeholder="Enter Name" required>
+                    </div>
+                    <div class="col-md-4">
+                        <label for="surname" class="form-label">Surname</label>
+                        <input type="text" class="form-control" id="surname" name="surname" placeholder="Enter Surname" required>
+                    </div>
+                    <div class="col-md-4">
+                        <label for="fathersName" class="form-label">Father's Name</label>
+                        <input type="text" class="form-control" id="fathersName" name="fathersName" placeholder="Enter Father's Name" required>
+                    </div>
+
+                    <div class="col-md-4">
+                        <label for="nationality" class="form-label">Nationality</label>
+                        <input type="text" class="form-control" id="nationality" name="nationality" placeholder="Enter Nationality" required>
+                    </div>
+                    <div class="col-md-4">
+                        <label for="dob" class="form-label">Date of Birth</label>
+                        <input type="date" class="form-control" id="dob" name="dob" required>
+                    </div>
+                    <div class="col-md-4">
+                        <label class="form-label">Gender</label><br>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="gender" id="male" value="Male" required>
+                            <label class="form-check-label" for="male">Male</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="gender" id="female" value="Female">
+                            <label class="form-check-label" for="female">Female</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="gender" id="other" value="Other">
+                            <label class="form-check-label" for="other">Other</label>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-4">
+                        <label for="maritalStatus" class="form-label">Marital Status</label>
+                        <select class="form-select" id="maritalStatus" name="maritalStatus" required>
+                            <option disabled selected value="">Select</option>
+                            <option value="Single">Single</option>
+                            <option value="Married">Married</option>
+                        </select>
+                    </div>
+                    <div class="col-md-4">
+                        <label for="phone" class="form-label">Phone</label>
+                        <input type="tel" class="form-control" id="phone" name="phone" placeholder="Enter Phone Number" required>
+                    </div>
+                    <div class="col-md-4">
+                        <label for="email" class="form-label">Email</label>
+                        <input type="email" class="form-control" id="email" name="email" placeholder="Enter Vaild Email" required>
+                    </div>
+
+                    <div class="col-12">
+                        <label for="presentAddress" class="form-label">Present Address</label>
+                        <textarea class="form-control" id="presentAddress" name="presentAddress" rows="2" placeholder="Enter Present Address" required></textarea>
+                    </div>
+                    <div class="col-12">
+                        <label for="permanentAddress" class="form-label">Permanent Address</label>
+                        <textarea class="form-control" id="permanentAddress" name="permanentAddress" rows="2" required placeholder="Enter Permanent Address"></textarea>
+                    </div>
+              </div>
+                </div>
+          </fieldset>
+                      <!-- Passport Details -->
+                    <fieldset class="border p-4 mb-4">
+                        <legend class="w-auto px-2">Passport Details <i class="fa-solid fa-passport"></i></legend>
+                        <div class="row g-3">
+                    <div class="col-md-4">
+                        <label for="passportNumber" class="form-label">Passport Number</label>
+                        <input type="text" class="form-control" id="passportNumber" name="passportNumber" placeholder="Enter Passport Number">
+                    </div>
+                    <div class="col-md-4">
+                        <label for="issueDate" class="form-label">Date of Issue</label>
+                        <input type="date" class="form-control" id="issueDate" name="issueDate">
+                    </div>
+                    <div class="col-md-4">
+                        <label for="expiryDate" class="form-label">Date of Expiry</label>
+                        <input type="date" class="form-control" id="expiryDate" name="expiryDate">
+                    </div>
+
+                    <div class="col-md-6">
+                        <label class="form-label">Do you have a valid VISA?</label><br>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="visa" id="visaYes" value="Yes">
+                            <label class="form-check-label" for="visaYes">Yes</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="visa" id="visaNo" value="No">
+                            <label class="form-check-label" for="visaNo">No</label>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <label for="visaType" class="form-label">Type of Visa</label>
+                        <input type="text" class="form-control" id="visaType" name="visaType" placeholder="Enter Type Of Visa">
+                    </div>
+
+                    <div class="col-12">
+                        <label class="form-label">Open to travel to USA/Sri Lanka for 6 months or less per year?</label><br>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="openTravel" id="travelYes" value="Yes">
+                            <label class="form-check-label" for="travelYes">Yes</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="openTravel" id="travelNo" value="No">
+                            <label class="form-check-label" for="travelNo">No</label>
+                        </div>
+                    </div>
+                </div>
+            </fieldset>
+
+            <!-- Education Information -->
+            <fieldset class="border p-4 mb-4">
+                <legend class="w-auto px-2">Education Information <i class="fa-solid fa-school"></i></legend>
+                <div class="row g-3">
+                    <div class="col-md-6">
+                        <!--SSC-->
+                        <label for="schoolName" class="form-label">School Name</label>
+                        <input type="text" class="form-control" id="schoolName" name="schoolName" placeholder="Enter School's Name" required>
+                    </div>
+                    <div class="col-md-6">
+                        <label for="schoolUniversity" class="form-label">University</label>
+                        <input type="text" class="form-control" id="schoolUniversity" name="schoolUniversity" placeholder="Enter University Name" required>
+                    </div>
+                    <div class="col-md-4">
+                        <label for="sscMarks" class="form-label">SSC Marks</label>
+                        <input type="number" class="form-control" id="sscMarks" name="sscMarks" placeholder="Enter 10th Marks" required>
+                    </div>
+
+                    <div class="col-md-4">
+                        <label for="sscFrom" class="form-label">From</label>
+                        <input type="date" class="form-control" id="sscFrom" name="sscFrom">
+                    </div>
+                    <div class="col-md-4">
+                        <label for="sscTo" class="form-label">To</label>
+                        <input type="date" class="form-control" id="sscTo" name="sscTo">
+                    </div>
+                    <!--HSC-->
+                    <div class="col-md-6">
+                        <label for="juniorCollege" class="form-label">Junior College</label>
+                        <input type="text" class="form-control" id="juniorCollege" name="juniorCollege" placeholder="Enter Junior College's Name" required>
+                    </div>
+                    <div class="col-md-6">
+                        <label for="juniorUniversity" class="form-label">University Name</label>
+                        <input type="text" class="form-control" id="juniorUniversity" name="juniorUniversity" placeholder="Enter University Name" required>
+                    </div>
+                    <div class="col-md-4">
+                        <label for="course" class="form-label">Course</label>
+                        <input type="text" class="form-control" id="course" name="course" placeholder="Enter Courses's Name" required>
+                    </div>
+                    <div class="col-md-4">
+                        <label for="hscMarks" class="form-label">HSC Marks</label>
+                        <input type="number" class="form-control" id="hscMarks" name="hscMarks" placeholder="Enter 12th's Marks" required>
+                    </div>
+                    <div class="col-md-2">
+                        <label for="hscFrom" class="form-label">From</label>
+                        <input type="date" class="form-control" id="hscFrom" name="hscFrom">
+                    </div>
+                    <div class="col-md-2">
+                        <label for="hscTo" class="form-label">To</label>
+                        <input type="date" class="form-control" id="hscTo" name="hscTo">
+                    </div>
+                    <!--Senior-->
+                    <div class="col-md-6">
+                        <label for="SeniorCollege" class="form-label">Senior College </label>
+                        <input type="text" class="form-control" id="SeniorCollege" name="DCollege" placeholder="Enter Senior College's Name" required>
+                    </div>
+                    <div class="col-md-6">
+                        <label for="seniorUniversity" class="form-label">University Name</label>
+                        <input type="text" class="form-control" id="seniorUniversity" name="seniorUniversity" placeholder="Enter University's Name" required>
+                    </div>
+                    <div class="col-md-4">
+                        <label for="CGPA" class="form-label">CGPA/SGPA</label>
+                        <input type="number" class="form-control" id="CGPA" name="CGPA" placeholder="Enter CGPA/SGPA" required>
+                    </div>
+                    <div class="col-md-4">
+                        <label for="DFrom" class="form-label">From</label>
+                        <input type="date" class="form-control" id="DFrom" name="DFrom">
+                    </div>
+                    <div class="col-md-4">
+                        <label for="DTO" class="form-label">To</label>
+                        <input type="date" class="form-control" id="DTO" name="DTO">
+                    </div>
+                </div>
+            </fieldset>
+
+            <!-- Container to hold dynamically added qualifications -->
+            <fieldset class="border p-4 mb-4">
+                <legend class="w-auto px-2">Additional qualification/Diplomas/Certificates/Training <i class="fa-solid fa-certificate"></i></legend>
+
+                <!-- Initial Education Entry -->
+                <div class="row g-3">
+                    <div class="col-md-6">
+                        <label for="Program" class="form-label">Program</label>
+                        <input type="text" class="form-control" id="Program" name="Program" placeholder="Enter Programs's Name" />
+                    </div>
+                    <div class="col-md-6">
+                        <label for="Institute" class="form-label">Institute</label>
+                        <input type="text" class="form-control" id="institute" name="institute" placeholder="Enter Institute's Name" />
+                    </div>
+                    <div class="col-md-4">
+                        <label for="additionalFrom" class="form-label">From</label>
+                        <input type="date" class="form-control" id="additionalFrom" name="additionalFrom" />
+                    </div>
+                    <div class="col-md-4">
+                        <label for="additionalTo" class="form-label">To</label>
+                        <input type="date" class="form-control" id="additionalTo" name="additionalTo" />
+                    </div>
+                    <div class="col-md-1 d-flex align-items-end">
+                        <button type="button" id="add" class="btn btn-success w-100">Add +</button>
+                    </div>
+                </div>
+
+                <!--  New rows will be appended here -->
+                <div id="qualification-container" class="mt-4"></div>
+            </fieldset>
+
+            <fieldset class="border p-4 mb-4">
+                <legend class="w-auto px-2">Achievements <i class="fa-solid fa-trophy"></i></legend>
+
+                <div id="achievement-container">
+                    <div class="achievement-row border rounded p-3 mb-3 bg-light">
+                        <div class="col-md-9">
+                            <label for="description" class="form-label">Description</label>
+                            <textarea name="description[]" class="form-control" rows="3" placeholder="Enter Description"></textarea>
+                        </div>
+                        <div class="col-md-3">
+                            <label for="year" class="form-label">Year</label>
+                            <input type="number" name="year[]" class="form-control" placeholder="Enter year" />
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-1 d-flex align-items-end">
+                        <button type="button" id="add-achievement" class="btn btn-success w-100">Add +</button>
+                    </div>
+            </fieldset>
+            <!--PROJECT INFORMATION-->
+            <fieldset class="border p-4 mb-4">
+                <legend class="w-auto px-2">Project Information <i class="fa-solid fa-diagram-project"></i></legend>
+                <div id="project-container">
+                 <div class="project-row border rounded p-3 mb-3 bg-light">
+                  <div class="row g-3">
+                        <div class="col-md-4">
+                            <label for="title" class="form-label">Title</label>
+                            <input type="text" class="form-control" id="title" name="title" placeholder="Enter Project Title Name">
+                        </div>
+                        <div class="col-md-4">
+                            <label for="Com1" class="form-label">Company</label>
+                            <input type="text" class="form-control" id="Com1" name="Com1" placeholder="Enter Company's Name">
+                        </div>
+                        <div class="col-md-4">
+                            <label for="Cli1" class="form-label">Client</label>
+                            <input type="text" class="form-control" id="Cli1" name="Cli1" placeholder="Enter Client's Name">
+                        </div>
+
+                        <div class="col-md-4">
+                            <label for="PlatformAndSkill" class="form-label">Platform & Skills used </label>
+                            <input type="text" class="form-control" id="PlatformAndSkill" name="PlatformAndSkill" placeholder="Enter Platform & Skills used">
+                        </div>
+                        <div class="col-md-4">
+                            <label for="TeamSize" class="form-label">Team Size</label>
+                            <input type="date" class="form-control" id="TeamSize" name="TeamSize" placeholder="Enter Number of Member in team">
+                        </div>
+                        <div class="col-md-4">
+                            <label for="Role1" class="form-label">Role</label>
+                            <input type="date" class="form-control" id="Role1" name="Role1" placeholder="Enter Role">
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-md-1 d-flex align-items-end">
+                            <button type="button" id="add-project" class="btn btn-success w-100">Add +</button>
+                        </div>
+            </div>
+            </fieldset>
+
+            <div id="personal" class="p-4 border rounded bg-light mb-4">
+                <legend class="mb-4">Personal Assessment <i class="fa-solid fa-person-walking"></i></legend>
+
+                <!-- Strengths -->
+                <div class="mb-4">
+                    <h5 class="mb-3">Strengths</h5>
+                    <div class="row g-3">
+                        <div class="col-md-6">
+                            <input type="text" class="form-control" name="strengths" placeholder="Enter Strength">
+                        </div>
+                        <div class="col-md-6">
+                            <input type="text" class="form-control" name="strengths" placeholder="Enter Strength">
+                        </div>
+                        <div class="col-md-6">
+                            <input type="text" class="form-control" name="strengths" placeholder="Enter Strength">
+                        </div>
+                        <div class="col-md-6">
+                            <input type="text" class="form-control" name="strengths" placeholder="Enter Strength">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Weaknesses -->
+                <div class="mb-3">
+                    <h5 class="mb-3">Weaknesses</h5>
+                    <div class="row g-3">
+                        <div class="col-md-6">
+                            <input type="text" class="form-control" name="weakness" placeholder="Enter Weakness">
+                        </div>
+                        <div class="col-md-6">
+                            <input type="text" class="form-control" name="weakness" placeholder="Enter Weakness">
+                        </div>
+                        <div class="col-md-6">
+                            <input type="text" class="form-control" name="weakness" placeholder="Enter Weakness">
+                        </div>
+                        <div class="col-md-6">
+                            <input type="text" class="form-control" name="weakness" placeholder="Enter Weakness">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <!--references-->
+            <div id="REFEREES" class="p-4 border rounded mb-4 bg-light">
+                <legend class="mb-3">References <i class="fa-solid fa-building"></i></legend>
+                <p class="text-muted">
+                    Please give two references, of which one should necessarily be from your present workplace.
+                </p>
+
+                <div class="table-responsive">
+                    <table class="table table-bordered align-middle">
+                        <thead class="table-secondary">
+                            <tr>
+                                <th>Name & Designation</th>
+                                <th>Current Company</th>
+                                <th>Address</th>
+                                <th>Contact Details</th>
+                                <th>Duration (Months/Years)</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><input type="text" class="form-control" placeholder="Name & Designation"></td>
+                                <td><input type="text" class="form-control" placeholder="Company"></td>
+                                <td><input type="text" class="form-control" placeholder="Address"></td>
+                                <td><input type="text" class="form-control" placeholder="Contact"></td>
+                                <td><input type="text" class="form-control" placeholder="Duration"></td>
+                            </tr>
+                            <tr>
+                                <td><input type="text" class="form-control" placeholder="Name & Designation"></td>
+                                <td><input type="text" class="form-control" placeholder="Company"></td>
+                                <td><input type="text" class="form-control" placeholder="Address"></td>
+                                <td><input type="text" class="form-control" placeholder="Contact"></td>
+                                <td><input type="text" class="form-control" placeholder="Duration"></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <fieldset class="border p-4 mb-4">
+                <legend class="w-auto px-2"></legend>
+
+                <div id="achievement-container">
+                    <div class="achievement-row border rounded p-3 mb-3 bg-light">
+                        <div class="col-md-9">
+                            <label for="hobby" class="form-label">Which Sport /Hobby / Activity provides you immense satisfaction? State briefly as to why?</label>
+                            <textarea name="hobby[]" class="form-control" rows="3" placeholder="Enter Hobby" required></textarea>
+                        </div>
+                        <div class="col-md-9">
+                            <label for="short" class="form-label">What are your short term goals?</label>
+                            <textarea name="short[]" class="form-control" rows="3" placeholder="Enter short term goals" required></textarea>
+                        </div>
+                        <div class="col-md-9">
+                            <label for="long" class="form-label">What are your long term goals?</label>
+                            <textarea name="long[]" class="form-control" rows="3" placeholder="Enter long term goals" required></textarea>
+                        </div>  
+                    </div>
+                </div>
+            </fieldset>
+
+            <h4>Declaration and Authorization</h4>
+            <p>
+                I understand that any employment by MNJ Software India Private Limited or its affiliated companies is conditioned upon positive responses from my references, bonding eligibility, continued adherence to MNJ Software India Private Limited policies and procedures, applicable rules and regulations and job performance satisfactory at all times to MNJ Software Private Limited.
+                I consent to take any pre or post-employment examinations as may be required by MNJ Software  Private Limited or its permitted agents, its representative, and release MNJ Software Private Limited and its agents from any liability that may arise from such examination.
+                I authorize an inquiry to be made on the information contained on this application. Former employers and officials of education institutes, named on this application are authorized to give information about me and I release them from all liability for issuing such information.
+                I hereby attest and warrant that all my answers on this application as well as on all forms completed in conjunction with my employment are true and accurate.  I understand that my misrepresentation of facts, failure to disclose information required on this application or material change in my information provided which is not reported to Human Resources shall be cause for dismissal regardless of when discovered by MNJ Software Private Limited
+                I understand, and authorize, that MNJ Software may share my consumer report and/or investigative report with third parties including auditors, government agencies, and clients as necessary.
+                I hereby declare that the information given by me is true and the certificates or documents submitted are genuine to the best of my knowledge.<br><br>
+
+                <label>Name in Block Capitals: <input type="text" placeholder="In block capital"></label>
+            </p>
+            <div class="text-center mt-5">
+                <button onclick="window.location.href='@Url.Action("Success", "ApplicationForm")'" class="btn btn-primary px-4 py-2">
+                    Submit
+                </button>
+            </div>
+
+
+
+
+
+        </form>
+    </div>
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

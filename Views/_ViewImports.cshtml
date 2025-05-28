@@ -1,0 +1,149 @@
+﻿@using ApplicationForm
+@using ApplicationForm.Models
+@model PersonalInfo
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+
+<form asp-action="PersonalInfo" method="post" class="container mt-4">
+    <div class="mb-3">
+        <label asp-for="FirstName" class="form-label"></label>
+        <input asp-for="FirstName" class="form-control" />
+
+        <label asp-for="Surname" class="form-label"></label>
+        <input asp-for="Surname" class="form-control" />
+
+        <label asp-for="FathersName" class="form-label"></label>
+        <input asp-for="FathersName" class="form-control" />
+
+        <label asp-for="Nationality" class="form-label"></label>
+        <input asp-for="Nationality" class="form-control" />
+  
+        <label asp-for="DateOfBirth" class="form-label"></label>
+        <input asp-for="DateOfBirth" class="form-control" />
+
+        <label asp-for="Gender" class="form-label"></label>
+        <input asp-for="Gender" class="form-control" />
+
+        <label asp-for="Marital" class="form-label"></label>
+        <input asp-for="Marital" class="form-control" />
+
+        <label asp-for="Phone_no" class="form-label"></label>
+        <input asp-for="Phone_no" class="form-control" />
+
+        <label asp-for="Email" class="form-label"></label>
+        <input asp-for="Email" class="form-control" />
+
+        <label asp-for="presentAddress" class="form-label"></label>
+        <input asp-for="presentAddress" class="form-control" />
+
+
+        <label asp-for="permanentAddress" class="form-label"></label>
+        <input asp-for="permanentAddress" class="form-control" />
+
+        <label asp-for="PassportNo" class="form-label"></label>
+        <input asp-for="PassportNo" class="form-control" />
+
+        <label asp-for="PassIssueDate" class="form-label"></label>
+        <input asp-for="PassIssueDate" class="form-control" />
+
+        <label asp-for="ExpiryDate" class="form-label"></label>
+        <input asp-for="ExpiryDate" class="form-control" />
+
+        <label asp-for="VisaType" class="form-label"></label>
+        <input asp-for="VisaType" class="form-control" />
+
+        <label asp-for="SchoolName" class="form-label"></label>
+        <input asp-for="SchoolName" class="form-control" />
+
+        <label asp-for="UniName1" class="form-label"></label>
+        <input asp-for="UniName1" class="form-control" />
+
+        <label asp-for="SccMarks" class="form-label"></label>
+        <input asp-for="SccMarks" class="form-control" />
+
+        <label asp-for="FromDateSC" class="form-label"></label>
+        <input asp-for="FromDateSC" class="form-control" />
+
+
+        <label asp-for="ToDateSC" class="form-label"></label>
+        <input asp-for="ToDateSC" class="form-control" />
+
+        <label asp-for="JRName" class="form-label"></label>
+        <input asp-for="JRName" class="form-control" />
+
+
+        <label asp-for="UniName2" class="form-label"></label>
+        <input asp-for="UniName2" class="form-control" />
+
+        <label asp-for="HSCMarks" class="form-label"></label>
+        <input asp-for="HSCMarks" class="form-control" />
+
+
+        <label asp-for="FromDateJR" class="form-label"></label>
+        <input asp-for="FromDateJR" class="form-control" />
+
+        <label asp-for="ToDateJR" class="form-label"></label>
+        <input asp-for="ToDateJR" class="form-control" />
+
+        <label asp-for="SeniorName" class="form-label"></label>
+        <input asp-for="SeniorName" class="form-control" />
+
+        <label asp-for="SeniorCLG" class="form-label"></label>
+        <input asp-for="SeniorCLG" class="form-control" />
+
+        <label asp-for="CGPA" class="form-label"></label>
+        <input asp-for="CGPA" class="form-control" />
+
+        <label asp-for="FromDateSR" class="form-label"></label>
+        <input asp-for="FromDateSR" class="form-control" />
+
+        <label asp-for="ToDateSR" class="form-label"></label>
+        <input asp-for="ToDateSR" class="form-control" />
+
+        <label asp-for="Program" class="form-label"></label>
+        <input asp-for="Program" class="form-control" />
+
+
+        <label asp-for="Institute" class="form-label"></label>
+        <input asp-for="Institute" class="form-control" />
+
+        
+        <label asp-for="AFrom" class="form-label"></label>
+        <input asp-for="AFrom" class="form-control" />
+
+
+        <label asp-for="ATo" class="form-label"></label>
+        <input asp-for="ATo" class="form-control" />
+
+        <label asp-for="description" class="form-label"></label>
+        <input asp-for="description" class="form-control" />
+
+        <label asp-for="Year" class="form-label"></label>
+        <input asp-for="Year" class="form-control" />
+
+        <label asp-for="Topic" class="form-label"></label>
+        <input asp-for="Topic" class="form-control" />
+
+        <label asp-for="Strengths" class="form-label"></label>
+        <input asp-for="Strengths" class="form-control" />
+
+        <label asp-for="Weakness" class="form-label"></label>
+        <input asp-for="Weakness" class="form-control" /> 
+
+        <label asp-for="Company1" class="form-label"></label>
+        <input asp-for="Company1" class="form-control" />
+
+        <label asp-for="NameDesignation" class="form-label"></label>
+        <input asp-for="NameDesignation" class="form-control" />
+
+        <label asp-for="CurrentCompany" class="form-label"></label>
+        <input asp-for="CurrentCompany" class="form-control" />
+
+          <label asp-for="Address" class="form-label"></label>
+          <input asp-for="Address" class="form-control" />
+
+        <label asp-for="ContactDetails" class="form-label"></label>
+        <input asp-for="ContactDetails" class="form-control" />
+
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </div>
+</form> 
